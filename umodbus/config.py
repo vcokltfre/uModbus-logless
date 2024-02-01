@@ -1,6 +1,3 @@
-import os
-
-
 class Config(object):
     """ Class to hold global configuration. """
 
@@ -28,8 +25,8 @@ class Config(object):
 
     """
     def __init__(self):
-        self.SIGNED_VALUES = os.environ.get('UMODBUS_SIGNED_VALUES', False)
-        self.BIT_SIZE = os.environ.get('UMODBUS_BIT_SIZE', 16)
+        self.SIGNED_VALUES = False
+        self.BIT_SIZE = 16
 
     @property
     def TYPE_CHAR(self):
