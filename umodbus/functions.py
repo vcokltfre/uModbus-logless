@@ -55,7 +55,6 @@ A response PDU could look like this::
     'b\\x06'
 
 """
-from __future__ import division
 import struct
 import math
 
