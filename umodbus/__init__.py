@@ -1,7 +1,6 @@
-from logging import getLogger, NullHandler
+from logging import getLogger
 
 log = getLogger('uModbus')
-log.addHandler(NullHandler())
 
 from .config import Config  # NOQA
 conf = Config()
